@@ -1,0 +1,18 @@
+.album {
+    &__figure {
+        display: table;
+        margin: auto;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 90vh;
+        margin: 1rem 0;
+    }
+
+    &__figcaption {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}

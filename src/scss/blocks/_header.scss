@@ -1,0 +1,53 @@
+.header {
+    background-color: $bg-header;
+    color: $text-color;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        text-align: center;
+        color: $link-color;
+    }
+}
+
+.ie-message {
+    display: none;
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@include sm {
+    .header {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include md {
+    .header {
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@include lg {
+    .header {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .ie-message {
+        display: block;
+    }
+}

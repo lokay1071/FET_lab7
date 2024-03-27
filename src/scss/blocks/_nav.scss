@@ -1,0 +1,82 @@
+.nav {
+    $self: &;
+
+    position: sticky;
+    top: 0;
+
+    background-color: $bg-header;
+
+    &__toggle {
+        display: block;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        color: $link-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &::after {
+            content: "☰";
+            display: block;
+            margin-left: 1rem;
+            float: right;
+        }
+    }
+
+    &.is-expanded {
+        #{$self} {
+            &__items {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                a {
+                    text-align: left;
+                }
+            }
+            &__item {
+                border-left: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+
+    &__items {
+        display: none;
+        justify-content: center;
+
+        list-style: none;
+    }
+
+    &__item {
+        color: $link-color;
+    }
+
+    &__item:hover {
+        color: $link-hover-color;
+        background-color: $link-hover-bg;
+    }
+
+    &__link {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        display: inline-block;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+@include md {
+    .nav {
+        &__toggle {
+            display: none;
+        }
+
+        &__items {
+            display: flex;
+        }
+    }
+}

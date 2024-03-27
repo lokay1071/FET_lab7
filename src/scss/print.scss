@@ -1,0 +1,24 @@
+@include print {
+    * {
+        font-family: "Times New Roman", Times, serif;
+        background: none !important;
+        color: #000 !important;
+        box-shadow: none !important;
+    }
+
+    body {
+        margin: 50px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+    }
+}

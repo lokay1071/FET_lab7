@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Мій розклад</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="ie-message">
+                Ви використовуєте застарілий браузер. Рекомендуємо оновити його
+                для оптимального відображення вмісту.
+            </div>
+            <h1 class="header__title">Особиста сторінка (блог) ПІБ</h1>
+        </header>
+
+        <nav class="nav" id="myNavbar">
+            <a href="#" class="nav__toggle">Menu</a>
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Головна</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="schedule.html">Мій розклад</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Останні новини</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="photo.html">Фотоальбом</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <div class="container-schedule">
+                <table class="schedule">
+                    <thead class="schedule__head">
+                        <tr class="schedule__row">
+                            <th class="schedule__head-data">Час</th>
+                            <th class="schedule__head-data">Понеділок</th>
+                            <th class="schedule__head-data">Вівторок</th>
+                            <th class="schedule__head-data">Середа</th>
+                            <th class="schedule__head-data">Четвер</th>
+                            <th class="schedule__head-data">П'ятниця</th>
+                            <th class="schedule__head-data">Субота</th>
+                        </tr>
+                    </thead>
+                    <tbody class="schedule__body">
+                        <tr class="schedule__row">
+                            <th class="schedule__head-data" rowspan="2">
+                                11-25
+                            </th>
+                            <td class="schedule__data" rowspan="2">-</td>
+                            <td class="schedule__data" rowspan="2">-</td>
+                            <td class="schedule__data">Основи DevOps</td>
+                            <td class="schedule__data" rowspan="2">-</td>
+                            <td class="schedule__data" rowspan="2">
+                                Основи розробки Web-додатків
+                            </td>
+                            <td class="schedule__data" rowspan="2">-</td>
+                        </tr>
+                        <tr class="schedule__row">
+                            <td class="schedule__data">-</td>
+                        </tr>
+                        <tr class="schedule__row">
+                            <th class="schedule__head-data">12-55</th>
+                            <td class="schedule__data">-</td>
+                            <td class="schedule__data">Front-end технології</td>
+                            <td class="schedule__data">
+                                Основи автоматизованого проєктування складних
+                                систем та об'єктів
+                            </td>
+                            <td class="schedule__data">-</td>
+                            <td class="schedule__data">
+                                Системі віртуалізації та контейнеризації
+                            </td>
+                            <td class="schedule__data">
+                                Англійська мова професійно-комунікативної
+                                спрямованості
+                            </td>
+                        </tr>
+                        <tr class="schedule__row">
+                            <th class="schedule__head-data">14-30</th>
+                            <td class="schedule__data">
+                                Основи програмної інженерії
+                            </td>
+                            <td class="schedule__data">Front-end Технології</td>
+                            <td class="schedule__data">
+                                Основи автоматизованого проєктування складних
+                                систем та об'єктів
+                            </td>
+                            <td class="schedule__data">-</td>
+                            <td class="schedule__data">
+                                Основи програмної інженерії
+                            </td>
+                            <td class="schedule__data">-</td>
+                        </tr>
+                        <tr class="schedule__row">
+                            <th class="schedule__head-data" rowspan="2">
+                                16-05
+                            </th>
+                            <td class="schedule__data" rowspan="2">-</td>
+                            <td class="schedule__data" rowspan="2">-</td>
+                            <td class="schedule__data" rowspan="2">
+                                Основи DevOps
+                            </td>
+                            <td class="schedule__data" rowspan="2">-</td>
+                            <td class="schedule__data">-</td>
+                            <td class="schedule__data" rowspan="2">-</td>
+                        </tr>
+                        <tr class="schedule__row">
+                            <td class="schedule__data">
+                                Системі віртуалізації та контейнеризації
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">Copyright 2024. Усі права захищенні.</p>
+        </footer>
+    </body>
+</html>
